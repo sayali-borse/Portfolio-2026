@@ -42,9 +42,9 @@ const Navbar = () => {
           <Button size="sm">Contact Me </Button>
         </div>
 
-        {/* mobile Menu display*/}
+        {/* mobile Menu button*/}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isMobileMenuOpen && (
-        <div className="glass-strong md:hidden">
+        <div className="glass-strong md:hidden animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
