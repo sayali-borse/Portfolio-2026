@@ -11,14 +11,14 @@ const App = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
-      <main>
+      {/* <main>
         <Hero />
         <About />
         <Experience />
         <Project />
         <Testimonial />
         <Contact />
-      </main>
+      </main> */}
     </div>
   );
 };
