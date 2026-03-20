@@ -1,4 +1,5 @@
 import { Button } from "../components/Button";
+import { Menu } from "lucide-react";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -33,10 +34,16 @@ const Navbar = () => {
             ))}
           </div>
         </div>
+
         {/* CTA button  */}
-        <div>
+        <div className="hidden md:block">
           <Button size="sm">Contact Me </Button>
         </div>
+
+        {/* mobile display*/}
+        <button className="md:hidden p-2 text-foreground">
+          <Menu />
+        </button>
       </nav>
     </header>
   );
