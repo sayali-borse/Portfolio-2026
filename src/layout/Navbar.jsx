@@ -1,9 +1,10 @@
+import { Button } from "../components/Button";
+
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#testimonial", label: "Testimonial" },
-  { href: "#contact", label: "Contact" },
 ];
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
         </a>
 
         {/* --- Desktop navbar  */}
-        <div className="flex items-center gap-1">
+        <div className=" hidden md:flex items-center gap-1">
           <div className="glass px-2 py-1 rounded-full flex items-center gap-1 ">
             {navLinks.map((link, index) => (
               <a
@@ -34,7 +35,7 @@ const Navbar = () => {
         </div>
         {/* CTA button  */}
         <div>
-          <Button></Button>
+          <Button size="sm">Contact Me </Button>
         </div>
       </nav>
     </header>
