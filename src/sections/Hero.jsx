@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(70)].map((_, i) => (
           <div
-            className="absolute w-0.75 h-0.75 rounded-full opacity-60"
+            className="absolute w-1 h-1 rounded-full opacity-60"
             style={{
               backgroundColor: "#20b2a6",
               // backgroundColor: "#ff4d6d",
@@ -60,7 +60,7 @@ const Hero = () => {
                   precision.
                 </span>
               </h1>
-              <p className="    text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-1200">
+              <p className="    text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-700">
                 Hi, I'm{" "}
                 <span className="text-white animate-pulse">Sayali Borse</span> —
                 a results-driven Full-Stack Developer skilled in React, Next.js,
@@ -110,7 +110,19 @@ const Hero = () => {
               })}
             </div>
           </div>
-          {/* --- right section  */}
+          {/* --- Right section Add image  */}
+          <div className="relative animate-fade-in animation-delay-300">
+            {/* ----- Profile image---- */}
+            <div className="relative max-w-md mx-auto">
+              <div className="relative glass rounded-3xl p-2 grow-border">
+                <img
+                  src="./public/profile-photo.jpg"
+                  alt="Profile pic"
+                  className=" w-full aspect-4/5 object-cover rounded-3xl"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

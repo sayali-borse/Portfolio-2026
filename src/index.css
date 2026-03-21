@@ -51,6 +51,11 @@
     text-shadow: 0 0 30px
       color-mix(in srgb, var(--color-primary) 50%, translate);
   }
+  .glow-border {
+    box-shadow:
+      0 0 20px color-mix(in srgb, var(--color-primary) 20%, translate),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, translate);
+  }
 }
 
 @layer utilities {
@@ -102,7 +107,7 @@
   .animation-delay-600 {
     animation-delay: 600ms;
   }
-  .animation-delay-1200 {
+  .animation-delay-700 {
     animation-delay: 700ms;
   }
   @keyframes animated-border {
