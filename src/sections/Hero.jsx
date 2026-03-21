@@ -1,12 +1,11 @@
 import React from "react";
 import { Button } from "@/components/Button";
 import AnimatedBorderButton from "@/components/AnimatedBorderButton";
-import { ArrowRight } from "lucide-react";
-import { DiGithub } from "react-icons/di";
+import { ArrowRight, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 // import { SiLinkedin, SiInstagram, SiTwitter, SiGithub } from "react-icons/si";
-// import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden ">
@@ -38,7 +37,7 @@ const Hero = () => {
       </div>
 
       {/* ---- content of Hero section---- */}
-      <div className="container mx-auto px-8 pt-32 pb-20 relative z-10 animation-delay-100">
+      <div className="container mx-auto px-8 pt-32 pb-10 relative z-10 animation-delay-100">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* ---left section  */}
 
@@ -61,7 +60,7 @@ const Hero = () => {
                   precision.
                 </span>
               </h1>
-              <p className=" mt-10   text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-1200">
+              <p className="    text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-1200">
                 Hi, I'm{" "}
                 <span className="text-white animate-pulse">Sayali Borse</span> —
                 a results-driven Full-Stack Developer skilled in React, Next.js,
@@ -71,7 +70,7 @@ const Hero = () => {
             </div>
             {/* ----- button section---  */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button size="default">
                 {" "}
                 Contact Me <ArrowRight className="h-5 w-5" />{" "}
               </Button>
@@ -80,18 +79,35 @@ const Hero = () => {
             </div>
             {/* -----socila links */}
 
-            <div>
-              <span> Follow :</span>
+            <div className="flex items-center gap-4 animate-fade-in ">
+              <span className="text-sm text-muted-foreground">
+                {" "}
+                Follow Me :
+              </span>
               {[
-                { icon: FaGithub, href: "#" },
-                { icon: FaLinkedin, href: "#" },
-                { icon: FaInstagram, href: "#" },
-                { icon: FaTwitter, href: "#" },
-              ].map((social, index) => (
-                <a key="index" href={social.href}>
-                  {social.icon}
-                </a>
-              ))}
+                { icon: FaGithub, href: "https://github.com/sayali-borse" },
+                {
+                  icon: FaLinkedin,
+                  href: "https://www.linkedin.com/in/sayali-borse0/",
+                },
+                {
+                  icon: FaInstagram,
+                  href: "https://www.instagram.com/sayali__borse/",
+                },
+                { icon: FaTwitter, href: "https://x.com/sayaliborse1" },
+              ].map((social, index) => {
+                const Icon = social.icon;
+
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    className="p-2 rounded-full glass hover:bg-primary transition-all duration-300"
+                  >
+                    <Icon size={18} />
+                  </a>
+                );
+              })}
             </div>
           </div>
           {/* --- right section  */}
