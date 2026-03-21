@@ -1,8 +1,12 @@
 import React from "react";
 import { Button } from "@/components/Button";
 import AnimatedBorderButton from "@/components/AnimatedBorderButton";
-import { ArrowRight, ArrowRightCircle, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { DiGithub } from "react-icons/di";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
+// import { SiLinkedin, SiInstagram, SiTwitter, SiGithub } from "react-icons/si";
+// import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden ">
@@ -79,11 +83,15 @@ const Hero = () => {
             <div>
               <span> Follow :</span>
               {[
-                { icon: github, href: "#" },
-                { icon: Instagram, href: "#" },
-                { icon: LinkedIn, href: "#" },
-                { icon: Twitter, href: "#" },
-              ]}
+                { icon: FaGithub, href: "#" },
+                { icon: FaLinkedin, href: "#" },
+                { icon: FaInstagram, href: "#" },
+                { icon: FaTwitter, href: "#" },
+              ].map((social, index) => (
+                <a key="index" href={social.href}>
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
           {/* --- right section  */}
