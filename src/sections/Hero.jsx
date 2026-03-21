@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/Button";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import AnimatedBorderButton from "@/components/AnimatedBorderButton";
 import { ArrowRight, ArrowRightCircle, Download } from "lucide-react";
 
 const Hero = () => {
@@ -57,12 +57,15 @@ const Hero = () => {
                   precision.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-1200">
-                {" "}
+              <p className=" mt-10   text-lg text-muted-foreground mx-w-lg animate-fade-in animation-delay-1200">
                 Hi, I'm{" "}
-                <span className="text-white animate-pulse"> Sayali Borse </span>
-                - Full-Stack Developer Specialist in React, Next.js Typescript,
-                I build scalable , Perfomant web applications that user love.
+                <span className="text-white animate-pulse">Sayali Borse</span> —
+                a results-driven Full-Stack Developer skilled in React, Next.js,
+                and TypeScript. I build efficient, scalable, and user-focused
+                web applications while following best practices in performance,
+                accessibility, and maintainability. I am actively seeking
+                opportunities where I can contribute, grow, and create
+                meaningful impact.
               </p>
             </div>
             {/* ----- button section---  */}
