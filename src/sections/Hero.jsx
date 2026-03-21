@@ -62,20 +62,28 @@ const Hero = () => {
                 <span className="text-white animate-pulse">Sayali Borse</span> —
                 a results-driven Full-Stack Developer skilled in React, Next.js,
                 and TypeScript. I build efficient, scalable, and user-focused
-                web applications while following best practices in performance,
-                accessibility, and maintainability. I am actively seeking
-                opportunities where I can contribute, grow, and create
-                meaningful impact.
+                web applications that user love.
               </p>
             </div>
             {/* ----- button section---  */}
-            <div>
-              <Button size="default">
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <Button size="lg">
                 {" "}
                 Contact Me <ArrowRight className="h-5 w-5" />{" "}
               </Button>
               {/* ------ Animated Border button  */}
               <AnimatedBorderButton />
+            </div>
+            {/* -----socila links */}
+
+            <div>
+              <span> Follow :</span>
+              {[
+                { icon: github, href: "#" },
+                { icon: Instagram, href: "#" },
+                { icon: LinkedIn, href: "#" },
+                { icon: Twitter, href: "#" },
+              ]}
             </div>
           </div>
           {/* --- right section  */}
