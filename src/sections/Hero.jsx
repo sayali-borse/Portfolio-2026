@@ -118,7 +118,7 @@ const Hero = () => {
                 <img
                   src="./public/profile1.jpeg"
                   alt="Profile pic"
-                  className=" w-full aspect-4/5 object-cover rounded-2xl"
+                  className=" w-full aspect-4/5 object-cover rounded-2xl opacity-70"
                 />
               </div>
             </div>
