@@ -116,9 +116,9 @@ const Hero = () => {
             <div className="relative max-w-md mx-auto">
               <div className="relative glass rounded-3xl p-2 grow-border">
                 <img
-                  src="./public/profile-photo.jpg"
+                  src="./public/profile1.jpeg"
                   alt="Profile pic"
-                  className=" w-full aspect-4/5 object-cover rounded-3xl"
+                  className=" w-full aspect-4/5 object-cover rounded-2xl"
                 />
               </div>
             </div>
